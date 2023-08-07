@@ -8,20 +8,29 @@ const HomePage = () => {
   return (
     <div>
       <div>
-        <img src="" alt="" />
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+          <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 fw-normal">Bienvenidos a Plantacenter <span>🪴</span></h1>
+            <p class="lead fw-normal">Aquí podrás econtrar las mejores plantas para tu hogar!</p>
+            <a class="btn btn-outline-secondary" href="#">Próximamente</a>
+          
+          <img src="" alt="" />
+        </div>
+      
       </div>
-      <h1>Recomendados para tí</h1>
+        <h1>Recomendados para tí</h1>
 
-      <hr></hr>
-      <div className="container mt-5">
-        <div className="row d-flex justify-content-between gap-5">
-          {dataProducts.map((product) => (
-            <Productos key={product.id} {...product} />
-          ))}
+        <hr></hr>
+        <div className="container mt-5">
+          <div className="row d-flex justify-content-between gap-5">
+            {dataProducts.map((product) => (
+              <Productos key={product.id} {...product} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
-  );
+      );
 };
 
-export default HomePage;
+      export default HomePage;

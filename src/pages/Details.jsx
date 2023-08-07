@@ -25,7 +25,7 @@ const Details = () => {
             <hr />
             <p>Descripción: {productDetail.description}</p>
             <h2>Precio: {productDetail.price}</h2>
-            <button className='btn btn-danger mt-3 ms-5'>Añadir</button>
+            <button className='btn btn-success mt-3 ms-5'>Añadir</button>
           </div>
         </div>
 

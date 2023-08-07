@@ -3,7 +3,8 @@ export const productos = [
 "id": 1,
 "title": "Ficus Benjamina",   
 "price": "$29.990",
-"image": "https://lajunglaurbana.cl/wp-content/uploads/2022/10/DSCF6125-L.jpg"
+"image": "https://lajunglaurbana.cl/wp-content/uploads/2022/10/DSCF6125-L.jpg",
+"description":"Es la planta mas cultivada en los interiores de nuestras casas, son plantas fáciles de cuidar y crecen rápidamente y puede alcanzar los 30 m de altura en condiciones naturales"
 },
 
 {

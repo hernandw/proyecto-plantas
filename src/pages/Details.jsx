@@ -5,20 +5,32 @@ import { productos } from "../data/getDataProduct"
 
 const Details = () => {
 
-const {dataProducts} = useContext(MyContext)
+  const { dataProducts } = useContext(MyContext)
 
-const { id } = useParams();
-const productDetail = dataProducts.find(item => item.id == id)
+  const { id } = useParams();
+  const productDetail = dataProducts.find(item => item.id == id)
 
 
 
   return (
-    <div className="card" style={{width: "18rem"}}>
-        <h2>{productDetail.title}</h2>
-        <img src={productDetail.image} alt="" />
-        <p className="fw-bold">{productDetail.price}</p>
-    </div>
-  )
+   
+
+      <div className='container d-flex justify-content-center'>
+        <div className='container row d-flex justify-content gap-3 mt-5'>
+          <div style={{ width: "500px" }}>
+            <img src={productDetail.image} className="card-img-top" alt="..." />
+          </div>
+          <div className="card-detail row" style={{ width: "500px" }}>
+            <h3>{productDetail.title}</h3>
+            <hr />
+            <p>Descripción:{productDetail.description}</p>
+            <h2>Precio: {productDetail.price}</h2>
+            <button className='btn btn-danger mt-3 ms-5'>Añadir</button>
+          </div>
+        </div>
+
+      </div>
+        )
 }
 
-export default Details
+        export default Details

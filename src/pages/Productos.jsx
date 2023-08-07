@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Productos = ({ id, price, title, image }) => {
+const Productos = ({ id, price, title, image, description }) => {
   const navigate = useNavigate();
 
   const HandleClick = () => {

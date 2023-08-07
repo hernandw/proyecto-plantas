@@ -11,27 +11,32 @@ export const productos = [
 "id": 2,
 "title": "Helecho Espada",   
 "price": "$16.990",
-"image": "https://plantme.cl/cdn/shop/products/hector-helecho-interior-plantme-chile-617857_1800x1800.png?v=1637694241"  
+"image": "https://plantme.cl/cdn/shop/products/hector-helecho-interior-plantme-chile-617857_1800x1800.png?v=1637694241",
+"description":"El nephrolepis es uno de los helechos más común, atractivo y resistente que podemos encontrar en nuestras casas."
+  
 },
 
 {
 "id": 3,
 "title": "Monstera Deliciosa",   
 "price": "$17.490",
-"image": "https://decoplanteria.cl/cdn/shop/files/IMG_97652_1200x.heic?v=1682658933"    
+"image": "https://decoplanteria.cl/cdn/shop/files/IMG_97652_1200x.heic?v=1682658933",
+"description":"La costilla de Adán es una planta muy popular que se caracteriza por tener unas grandes hojas verdes partidas, como si se tratase de unas costillas."  
 }
 ,
 {
 "id": 4,
 "title": "Lengua de suegra",   
 "price": "$42.990",
-"image": "https://decoplanteria.cl/cdn/shop/files/IMG_2888_1200x.heic?v=1688615084"    
+"image": "https://decoplanteria.cl/cdn/shop/files/IMG_2888_1200x.heic?v=1688615084",
+"description":"La sansevieria, también conocida como lengua de suegra, es una planta ideal para la decoración interior de tu hogar por su belleza. Además, requiere de unos cuidados mínimos, por lo que resulta perfecta para principiantes"
 }
 ,
 {
 "id": 5,
 "title": "Shefflera",   
 "price": "$39.990",
-"image": "https://dmp.cz/cdn/shop/products/schefflera-arboricola-variegata-01_6160f1a2-f5e1-4526-8d47-c962ab1e1dd9_1500x.jpg?v=1674466588"    
+"image": "https://dmp.cz/cdn/shop/products/schefflera-arboricola-variegata-01_6160f1a2-f5e1-4526-8d47-c962ab1e1dd9_1500x.jpg?v=1674466588",
+"description":"La cheflera o Schefflera Arboricola es una planta de interior muy popular y de gran porte perfecta para lugares espaciosos y luminosos del hogar."
 }
 ]

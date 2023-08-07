@@ -23,7 +23,7 @@ const Details = () => {
           <div className="card-detail row" style={{ width: "500px" }}>
             <h3>{productDetail.title}</h3>
             <hr />
-            <p>Descripción:{productDetail.description}</p>
+            <p>Descripción: {productDetail.description}</p>
             <h2>Precio: {productDetail.price}</h2>
             <button className='btn btn-danger mt-3 ms-5'>Añadir</button>
           </div>
@@ -33,4 +33,4 @@ const Details = () => {
         )
 }
 
-        export default Details
+export default Details

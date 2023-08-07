@@ -17,7 +17,7 @@ const Login = () => {
 
   return (
     <div>
-      <h1 className="text-center mt-5">Iniciar sesion</h1>
+      <h1 className="text-center mt-5">Iniciar sesión</h1>
 
       <form className="formulario" onSubmit={handleSubmit}>
         {error ? (

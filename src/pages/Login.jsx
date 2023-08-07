@@ -26,7 +26,7 @@ const Login = () => {
           </p>
         ) : null}
 
-        <div className="mb-3 ms-5  me-5 col-xs-4">
+        <div className="mb-3 ms-5  me-5 col-xs-4 text-center">
           <label className="form-label">Correo electronico</label>
           <input
             type="email"
@@ -38,7 +38,7 @@ const Login = () => {
           />
         </div>
 
-        <div className="mb-3 ms-5  me-5 col-xs-4">
+        <div className="mb-3 ms-5  me-5 col-xs-4 text-center">
           <label className="form-label">Contraseña</label>
           <input
             type="password"

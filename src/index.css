@@ -4,9 +4,19 @@ body {
 }
 
 input {
-    max-width: 30%;
+    max-width: 40%;
+    margin-left: 335px;
+
 }
 
 h1 {
     text-align:center
+}
+
+form{
+    margin:30px auto;
+}
+
+button {
+    max-width: 30%
 }

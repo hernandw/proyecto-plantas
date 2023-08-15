@@ -1,26 +1,35 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import {useNavigate} from "react-router-dom"
+import axios from "axios"
 
 const Register = () => {
-  const [nombre, setNombre] = useState("");
-  const [correo, setCorreo] = useState("");
-  const [direccion, setDireccion] = useState("");
-  const [contraseña, setContraseña] = useState("");
+  const navigate = useNavigate();
+  const [nombre, setNombre] = useState('')
+  const [email, setEmail] = useState('')
+  const [direccion, setDireccion] = useState('')
+  const [password, setPassword] = useState('')
 
-  const [error, setError] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (
-      nombre === "" ||
-      correo === "" ||
-      direccion === "" ||
-      contraseña === ""
-    ) {
-      setError(true);
-      return;
+  const registrarUsuario=async()=>{
+    try {
+      const body = { nombre, email, direccion, password }
+      console.log('cuerpo', body)
+      await fetch('http://localhost:3000/usuarios', {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      
+      alert('Usuario creado con exito')
+      
+    } catch (error) {
+      alert('Hubo un error')
+      console.log(error.message)
     }
-  };
+  }
+  
+  
 
   return (
     <div>
@@ -28,13 +37,9 @@ const Register = () => {
 
       <form
         className="formulario row d-flex justify-content-center"
-        onSubmit={handleSubmit}
+        
       >
-        {error ? (
-          <p className="alert alert-danger text-center ms-5">
-            Todos los datos son obligatorios
-          </p>
-        ) : null}
+        
 
         <div className="mb-3 ms-5  me-5 col-xs-4 text-center">
           <label className="form-label ">Nombre</label>
@@ -55,8 +60,8 @@ const Register = () => {
             className="form-control"
             id="email"
             placeholder="Ingresa tu correo electronico"
-            value={correo}
-            onChange={(e) => setCorreo(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
 
@@ -79,14 +84,14 @@ const Register = () => {
             className="form-control"
             id="password"
             placeholder="Ingresa tu contraseña"
-            value={contraseña}
-            onChange={(e) => setContraseña(e.target.value)}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
 
         <button
-          type="submit"
           className="btn btn-success d-grid gap-2 col-6 mx-auto"
+          onClick={registrarUsuario}
         >
           Registrarme
         </button>

@@ -39,4 +39,12 @@ export const productos = [
 "image": "https://dmp.cz/cdn/shop/products/schefflera-arboricola-variegata-01_6160f1a2-f5e1-4526-8d47-c962ab1e1dd9_1500x.jpg?v=1674466588",
 "description":"La cheflera o Schefflera Arboricola es una planta de interior muy popular y de gran porte perfecta para lugares espaciosos y luminosos del hogar."
 }
+,
+{
+    "id": 6,
+    "title": "Dolar Chaucha",   
+    "price": "$29.990",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQydgeniamIpiFM_PLdC-OlhqG1b19-ce2kIQ&usqp=CAU",
+    "description":"El Dolar Chaucha tiene un rápido crecimiento así que podría ser ideal para dejarla en un balcón y así pueda lucir su bello color, pero ojo que no tolera muy bien el sol de forma directa."
+    }
 ]

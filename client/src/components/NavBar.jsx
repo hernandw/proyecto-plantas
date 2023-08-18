@@ -6,7 +6,7 @@ const Navbar = () => {
 
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container">
-        <NavLink className="navbar-brand" to="/">Plantacenter</NavLink>
+        <NavLink className="navbar-brand" to="/"><span>🪴</span>Plantacenter</NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -18,17 +18,20 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink className="nav-link" to="/">Tienda</NavLink>
             </li>
-            
+            <li className="nav-item">
+              <NavLink className="nav-link" to="favoritos">Favoritos</NavLink>
+            </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="login">Iniciar sesión</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="register">Registrarse</NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="miperfil">Mi perfil</NavLink>
-            </li>
 
+            <li className="nav-item">
+              <NavLink className="nav-link" to="contact">Contáctanos</NavLink>
+            </li>
+            
           </ul>
         </div>
       </div>

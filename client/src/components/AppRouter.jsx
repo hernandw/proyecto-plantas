@@ -5,6 +5,7 @@ import Favoritos from '../pages/Favoritos'
 import Details from '../pages/Details'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
+import Miperfil from '../pages/Miperfil'
 
 const AppRouter = () => {
   return (
@@ -15,7 +16,7 @@ const AppRouter = () => {
             <Route path='product/:id' element={<Details />} />
             <Route path='login' element={<Login />} />
             <Route path='register' element={<Register />} />
-            <Route path='/miperfil' element={<h1>Perfil</h1>} />
+            <Route path='/miperfil' element={<Miperfil/>} />
         </Routes>
     </div>
   )

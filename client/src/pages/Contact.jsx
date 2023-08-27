@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Contact = () => {
     return (
@@ -21,7 +21,7 @@ const Contact = () => {
                 <div className='container mt-3'>
 
                     <label className="form-label d-flex justify-content-center">Mensaje</label>
-                    <textarea class="form-control" rows="3"></textarea>
+                    <textarea className="form-control" rows="3"></textarea>
                 </div>
 
                 <div className='d-flex justify-content-center mt-3'>

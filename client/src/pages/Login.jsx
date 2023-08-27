@@ -10,7 +10,7 @@ const Login = () => {
   const iniciarSesion= async (e)=> {
     e.preventDefault();
     try {
-      const response= await axios.post("http://localhost:3000/login", {
+      const response= await axios.post("https://backend-pc.onrender.com/login", {
         email,
         password
       })
